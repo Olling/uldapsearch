@@ -8,12 +8,12 @@ import (
 
 type JsonEntry struct {
 	DN string
-	Attributes []*JsonEntryAttribute
+	Attributes []*JsonEntryAttribute `json:"Attributes,omitempty"`
 }
 
 type JsonEntryAttribute struct {
 	Name string
-	Values []string
+	Values []string 
 }
 
 
